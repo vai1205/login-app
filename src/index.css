@@ -1,13 +1,97 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: url("./login-bg.jpg");
+  background-repeat: round;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  width: 350px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .4);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-left: 10px;
+  caret-color: aliceblue;
+  color: aliceblue
+}
+
+button#login-btn {
+  padding: 10px 20px;
+  font-size: medium;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, .5);
+  border: #000;
+}
+
+button:focus {
+  outline: none;
+}
+
+button#login-btn:hover {
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.ask-signup button {
+  margin-top: 10px;
+  padding: 3px 7px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-group {
+  font-size: medium;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 50px;
+}
+
+h1 {
+  font-family: 'Rowdies', cursive;
+}
+
+.profile {
+  background-image: url('./profile-bg.jpg');
+  background-repeat: no-repeat;
+  background-repeat: round;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
